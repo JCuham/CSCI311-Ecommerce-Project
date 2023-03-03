@@ -1,6 +1,6 @@
 # csci-311-ecom
 
-This project was created for Vancouver Island Universities CSCI 311 Spring 2022.
+This project was created for Vancouver Island Universities CSCI 311 Spring 2022 by a team of four.
 
 This project aims to be a location where VIU Computer science students can
 create an account and list items for sale. This service is exclusive to computer
@@ -94,54 +94,3 @@ sudo apt install php
 - Right now the upload image function is not working:
     - This apears to be due to one or more of the following factors how PHP is configured on csci machines, `.htaccess`, quotas, and file permissions.
     - Suggested workarounds: use a third party hosting service and log urls to the image in the database.
-
-## Project Documentation
-This section outlines who did what for this project:
-
-### Sam
-- Helped james create perliminary ER diagram
-- Helped james in creating the initial html pages for the functional prototype:
-    - Shell to about page, it is only missing the content
-    - Categories html page with the help of James
-    - Catagory html page
-    - Index.html with the help of James
-    - Listing html shell, it is only missing the content
-    - Fixed some padding issues on James login form
-    - Created the new product form
-    - Created the update product form
-- Created the initial SQL tables, these were later updated by me and James
-- Converted all html files to php, making use of partials for headers and footers and html heads.
-- Implemented login functionality using PHP sessions
-- Implemented logout functionality
-- Implemented add product functionality: note that uploading images is broken at this point
-- Setup git repo and remote to streamline pushing development changes into a production location
-- Wrote project README
-- Wrote script for setting up an ssh tunnel: depriciated and not used following the update to use php
-
-### James
-- Helped Sam create preliminary ER diagram.
-- Helped Sam creating initial html pages for functional prototype:
-    -  Created Index.html page and used bootstrap cards to display general look of listings.
-    -  Created Categories.html page and used bootstrap cards to select category.
-    -  Created Login form with bootstrap.
-    -  Created Signup form with bootstrap.
-- Created php scripts in:
-    -  Index.php for displaying all items listed for sale in bootstrap cards and contact button to contact the seller.
-    -  Dashboard.php for displaying users postings in their dashboard and allowing them to delete postings.
-    -  delete_listing.php PHP script for deleting a product from the database by id.
-    -  categories.php Added category images that when clicked run category.php script.
-    -  categorie.php Created php script to list Products from the database like Index.php but by category.
-        eg. "Automotive".
- - Updated SQL tables with Sam.
- - Wrote seed script (populate_tables.sql) in SQL to populate the tables with testing data.
- - Accidentally pushed dbinfo.inc to the repository causing pain and suffering for all members on my team.
-### Devam
-- Came up with the idea of making an e-commerce website.
-- Creared the abouts.htlm page for the functional prototype.
-- Implemented signup functionality to allow new users to signup
-- Implemented update profile functionality to allow the users to update their personal information
-- Implemented update product to allow the users change information about their postings
-- Wrote the sql seed scripts that are curruntly being used
-- Helped James with the login functionality
-
-### Ryan
